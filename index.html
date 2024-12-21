@@ -1,95 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - [Seu Nome]</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Desenvolvedor web especializado em Java, Spring Boot, HTML e CSS. Transformando ideias em soluções digitais inovadoras.">
+    <meta name="author" content="Netinho Ribeiro">
+    <title>Netinho Ribeiro - Desenvolvedor Web</title>
+    
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal e de Animações -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
+    <header id="header" class="fade-in">
         <div class="container">
-            <h1 class="logo">Portfólio de [Seu Nome]</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+            <h1>Netinho Ribeiro</h1>
+            <h2>Desenvolvedor Web Especializado em Soluções Java e CSS</h2>
+            <a href="#contact" class="btn btn-primary">Entre em Contato</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h2>Transformo ideias em códigos</h2>
-            <p>Programador Junior especializado em Java, Spring Boot e CSS.</p>
-            <a href="#projects" class="btn">Ver Projetos</a>
-        </div>
-    </section>
-
-    <!-- Sobre Mim -->
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Sou um programador dedicado a transformar conceitos em soluções reais. Atualmente estudo Java com Spring Boot, criando aplicações robustas e elegantes. Também domino HTML e CSS para desenvolver interfaces modernas.</p>
-        </div>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projects">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="project">
-                <h3>CrudeProducts</h3>
-                <p>Sistema de controle de estoque com Spring Boot.</p>
-                <p><strong>Tecnologias:</strong> Java, Spring Boot, HTML, CSS</p>
-                <a href="#">Ver no GitHub</a>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p>Sou um apaixonado por tecnologia e criação de interfaces de usuário inovadoras, elegantes e responsivas. Meu objetivo é transformar ideias em soluções digitais de alta qualidade.</p>
             </div>
-            <!-- Adicione mais projetos aqui -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Serviços -->
-    <section id="services">
-        <div class="container">
-            <h2>Meus Serviços</h2>
-            <ul>
-                <li>Desenvolvimento de sites e landing pages responsivas.</li>
-                <li>Aplicações web usando Java e Spring Boot.</li>
-                <li>Design front-end com HTML e CSS modernos.</li>
-            </ul>
-        </div>
-    </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project animate-up">
+                        <img src="assets/img/project1.jpg" alt="Screenshot do Projeto 1">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição breve sobre o projeto e tecnologias utilizadas.</p>
+                    </div>
+                    <div class="project animate-up">
+                        <img src="assets/img/project2.jpg" alt="Screenshot do Projeto 2">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição breve sobre o projeto e tecnologias utilizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contato -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <form action="#" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="testimonials">
+            <div class="container">
+                <h2>O que dizem sobre mim</h2>
+                <blockquote class="fade-in">
+                    "Trabalho excepcional e dedicação ao máximo!"
+                </blockquote>
+                <cite>- João Silva</cite>
+            </div>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <section id="teams">
+                <div class="container">
+                    <h2>Times em Ação</h2>
+                    <div class="teams-grid">
+                        <div class="team animate-up">
+                            <img src="assets/img/project4.jpg" alt="Time trabalhando no projeto 1">
+                            <h3>Equipe Criativa</h3>
+                            <p>Time de desenvolvedores dedicados, criando soluções inovadoras para o mercado digital.</p>
+                        </div>
+                        <div class="team animate-up">
+                            <img src="assets/img/project3.jpg" alt="Time trabalhando no projeto 2">
+                            <h3>Equipe de Programação</h3>
+                            <p>Profissionais apaixonados por programação, colaborando para criar sistemas eficientes e escaláveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+    </main>
 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Netinho Ribeiro. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Scripts para animações -->
+    <script src="js/main.js"></script>
+    <script src="js/observer.js"></script>
 </body>
+
 </html>

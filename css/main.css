@@ -1,0 +1,202 @@
+/* Variáveis Globais */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #333;
+    --accent-color: #f39c12;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-secondary);
+}
+
+/* Layout principal */
+body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 80px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+header .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color var(--transition-speed);
+}
+
+header .btn:hover {
+    background-color: #d4e7ff;
+}
+
+/* Seções principais */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Sobre mim */
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+.project p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testemunhos */
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+}
+/* Seção Times em Ação */
+#teams {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#teams h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.team {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team h3 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+.team p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    color: #555;
+}

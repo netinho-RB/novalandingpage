@@ -1,0 +1,22 @@
+/* Animações */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.animate-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
